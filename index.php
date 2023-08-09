@@ -42,8 +42,8 @@ echo '<br> Estoque: '.$camiseta->getEstoque();
 
 echo '<hr>> aula 3 <<hr>';
 
-$a1 = new ManipulaArquivo("abc.txt");
-$a1->escrever("ola mundo ");
-$a1->escrever("escrever no arquivo. ");
-echo $a1->ler();
-unset($a1);
+// $a1 = new ManipulaArquivo("abc.txt");
+// $a1->escrever("ola mundo ");
+// $a1->escrever("escrever no arquivo. ");
+// echo $a1->ler();
+// unset($a1);
