@@ -1,4 +1,8 @@
 <?php
+$versaoPHP = phpversion();
+date_default_timezone_set('America/Fortaleza');
+echo "Versão do PHP: " . $versaoPHP ." - Data: ". date('d M Y') . " - Hora: ". date('H:i:s');
+
 require_once "classes/pessoa.php";
 require_once "classes/produto.php";
 require_once "classes/ManipulaArquivo.php";
