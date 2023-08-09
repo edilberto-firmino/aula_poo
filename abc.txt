@@ -1,1 +1,4 @@
 ola mundo escrever no arquivo. 
+
+  git config --global user.email "edilberto_ti@yahoo.com.br"
+  git config --global user.name "edilberto-firmino"
