@@ -13,6 +13,7 @@ class ManipulaArquivo{
         fwrite($this->arquivo, $string);
     }
 
+    
     public function ler(){
         fseek($this->arquivo, 0);
         return fread($this->arquivo, filesize($this->caminho_arquivo));

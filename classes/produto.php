@@ -7,7 +7,6 @@ class Produto{
     private $preco;
     private $estoque = 1; 
 
-
     
     public  function getEstoque(){
         return $this->estoque;

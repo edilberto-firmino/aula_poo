@@ -35,6 +35,7 @@ $camiseta->setEstoque(100);
 echo '<br> Estoque: '.$camiseta->getEstoque();
 
 
+
 echo '<hr>> aula 3 <<hr>';
 
 $a1 = new ManipulaArquivo("abc.txt");

@@ -12,6 +12,7 @@ class Pessoa{
         $this->idade = $idade;    
     }   
 
+    
     public function falar($assunto){
         if($this->falando){
             echo "{$this->nome} está falando <br>";
