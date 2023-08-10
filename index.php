@@ -61,4 +61,8 @@ $caneta = new Caneta('Bic');
 
 
 $escritor->setCaneta($caneta);
-$escritor->getCaneta() ->escrever();
+$escritor->getCaneta()->escrever();
+$escritor->getCaneta()->tampar();
+$escritor->getCaneta()->guardou();
+$escritor->getCaneta()->pararEscrever();
+

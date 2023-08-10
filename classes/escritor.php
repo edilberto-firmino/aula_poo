@@ -12,10 +12,10 @@ class Escritor{
         return $this->nome;
     }
 
-    public function setCaneta(Caneta $caneta){ 
-        $this->caneta = $caneta;
+    public function setCaneta(Caneta $escrever){ 
+        $this->caneta = $escrever;
     }
-    
+
     public function getCaneta(){
         return $this->caneta;
     }
