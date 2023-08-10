@@ -7,7 +7,8 @@ class Pessoa{
     private $falando = true;
     private $comendo = true;
 
-    public function __construct($nome, $idade, $profissao){
+
+    public function __construct($nome, $idade){
         $this->nome = $nome;
         $this->idade = $idade;    
     }   
