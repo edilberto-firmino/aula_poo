@@ -60,7 +60,7 @@ $escritor = new Escritor('Edilberto Firmino');
 $caneta = new Caneta('Bic');
 
 
-$escritor->setCaneta($caneta);
+$escritor->setCaneta($caneta    );
 $escritor->getCaneta()->escrever();
 $escritor->getCaneta()->tampar();
 $escritor->getCaneta()->guardou();
