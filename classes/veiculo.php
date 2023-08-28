@@ -2,7 +2,8 @@
 class Veiculo{
     protected $nome;
     protected $modelo;
-    protected $passageiros;   
+    protected $passageiros;  
+ 
 
     public function __construct(string $nome, string $modelo, int $passageiros){
         $this->nome = $nome;

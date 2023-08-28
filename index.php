@@ -12,6 +12,7 @@ require_once "classes/ManipulaArquivo.php";
 require_once "classes/veiculo.php";
 require_once "classes/carro.php";
 require_once "classes/bicicleta.php";
+require_once  "classes/moto.php";
 
 
 
@@ -74,18 +75,23 @@ $escritor->getCaneta()->pararEscrever();
 echo '<hr>> aula 5.1 Herança <<hr>';
 //oarte 1 https://www.youtube.com/watch?v=CczCpyiglpc&list=PLbIBj8vQhvm3BSOBDi88iy9BV-l-aQ_00&index=7
 
-$c1  = new Carro('Carro','Gol',4);
-echo "o veiculo {$c1->getNome()} {$c1->getModelo()} ";
-echo "Suporta {$c1->getPassageiros()} passageiros. <br>";
-$c1->acelerar();
 
 $c2  = new Bicicleta('bicicleta','caloi',2);
 echo "o veiculo {$c2->getNome()} {$c2->getModelo()} ";
 echo "Suporta {$c2->getPassageiros()} passageiros. <br>";
 $c2->pedalar();
 
+$c3  = new Moto('Moto','XRE 190',2);
+echo "o veiculo {$c3->getNome()} {$c3->getModelo()} ";
+echo "Suporta {$c3->getPassageiros()} passageiros. <br>";
+$c3->empinar();
 
 echo '<hr>> aula 5.2 Herança <<hr>';
 //oarte 2  https://www.youtube.com/watch?v=JQiHGIeZsjU&list=PLbIBj8vQhvm3BSOBDi88iy9BV-l-aQ_00&index=8
 
 
+$c1  = new Carro('Carro','Gol',5, 4);
+echo "o veiculo {$c1->getNome()} {$c1->getModelo()} ";
+echo "Suporta {$c1->getPassageiros()} passageiros e tem {$c1->getRodas()} Rodas <br>"; 
+//aqui ele trás uma herança lá de carro que faz parentesco do construtor de veiculos com de carro, que se não usar o "parent" ele subscreve o construtor de veiuclo.
+$c1->acelerar();
