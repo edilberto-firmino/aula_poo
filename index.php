@@ -9,6 +9,11 @@ require_once "classes/caneta.php";
 require_once "classes/pessoa.php";
 require_once "classes/produto.php";
 require_once "classes/ManipulaArquivo.php";
+require_once "classes/veiculo.php";
+require_once "classes/carro.php";
+require_once "classes/bicicleta.php";
+
+
 
 echo '<hr>> aula 1 - introdução a orientação a objetos <<hr>';
 
@@ -53,16 +58,27 @@ echo '<br> Estoque: '.$camiseta->getEstoque();
 
 
 
-echo '<hr>> aula 4 associação  entre classes<<hr>';
+echo '<hr>> aula 4 associação  entre classes <<hr>';
 //https://www.youtube.com/watch?v=_K9aBkMr3zE&list=PLbIBj8vQhvm3BSOBDi88iy9BV-l-aQ_00&index=5
 
 $escritor = new Escritor('Edilberto Firmino');
 $caneta = new Caneta('Bic');
 
 
-$escritor->setCaneta($caneta    );
+$escritor->setCaneta($caneta);
 $escritor->getCaneta()->escrever();
 $escritor->getCaneta()->tampar();
 $escritor->getCaneta()->guardou();
 $escritor->getCaneta()->pararEscrever();
 
+echo '<hr>> aula 5 Herança <<hr>';
+
+$c1  = new Carro('Carro','Gol',4);
+echo "o veiculo {$c1->getNome()} {$c1->getModelo()} ";
+echo "Suporta {$c1->getPassageiros()} passageiros. <br>";
+$c1->acelerar();
+
+$c2  = new Bicicleta('bicicleta','caloi',2);
+echo "o veiculo {$c2->getNome()} {$c2->getModelo()} ";
+echo "Suporta {$c2->getPassageiros()} passageiros. <br>";
+$c2->pedalar();
