@@ -71,7 +71,8 @@ $escritor->getCaneta()->tampar();
 $escritor->getCaneta()->guardou();
 $escritor->getCaneta()->pararEscrever();
 
-echo '<hr>> aula 5 Herança <<hr>';
+echo '<hr>> aula 5.1 Herança <<hr>';
+//oarte 1 https://www.youtube.com/watch?v=CczCpyiglpc&list=PLbIBj8vQhvm3BSOBDi88iy9BV-l-aQ_00&index=7
 
 $c1  = new Carro('Carro','Gol',4);
 echo "o veiculo {$c1->getNome()} {$c1->getModelo()} ";
@@ -82,3 +83,9 @@ $c2  = new Bicicleta('bicicleta','caloi',2);
 echo "o veiculo {$c2->getNome()} {$c2->getModelo()} ";
 echo "Suporta {$c2->getPassageiros()} passageiros. <br>";
 $c2->pedalar();
+
+
+echo '<hr>> aula 5.2 Herança <<hr>';
+//oarte 2  https://www.youtube.com/watch?v=JQiHGIeZsjU&list=PLbIBj8vQhvm3BSOBDi88iy9BV-l-aQ_00&index=8
+
+
