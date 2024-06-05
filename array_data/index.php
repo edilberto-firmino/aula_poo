@@ -1,25 +1,36 @@
 <?php
 include_once 'data.php';
+include_once 'agenda.php';
 
 
 $dataAtual = new DataAtual();
+$rodape=$dataAtual->dataformatada();
 
-$sexta_feira = $dataAtual->dia() == 5;
-$horaSexta = $dataAtual->horaSexta();
+$agenda = new Agenda(); 
+$pessoa = $agenda->nome('Edilberto');
+$hoje = $dataAtual->dia();
 
-if ($sexta_feira) {
-    if($sexta_feira && $horaSexta){
-        echo $horaSexta . "<br>";
-    }else{
-        echo "hoje é dia de fechar a rota as 15:00, em detrimento da Sexta as atividades se encerrar 1H antes dos demais dias. ". "<br>";
-    }
+
+if($hoje >= 1 and $hoje <= 5){
+    echo $pessoa . " - " . "rotina da semana <br>";
 }else{
-    echo 'hoje é dia de fechar a rota as 16:00, por favor não perder o horário'  . "<br>";
+    echo $pessoa . " - " . "rotina do fim de semana <br>";
 }
 
+$atividade = $agenda->atividade();
+$horas = $agenda->horario();
 
+$rotina=[];
 
+foreach($horas as $hora => $atividade){
+    $rotina[$hora] = $atividade;
+}
 
+foreach ($rotina as $hora => $atividade) {
+    echo "<br>{$hora}:  - " .$atividade;
+}
+echo "<br>";
+echo "<br>".$rodape;;
 
 
 ?>
