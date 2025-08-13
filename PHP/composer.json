@@ -1,0 +1,17 @@
+{
+    "name": "edilberto/php",
+    "autoload": {
+        "psr-4": {
+            "Edilberto\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wige12",
+            "email": "wige0408@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    }
+}
